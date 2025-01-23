@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import AboutMe from "./components/AboutMe";
 
 const App = () => {
   // State to track dark mode
@@ -12,6 +14,8 @@ const App = () => {
   return (
     <div>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <HeroSection />
+      <AboutMe />
     </div>
   );
 };

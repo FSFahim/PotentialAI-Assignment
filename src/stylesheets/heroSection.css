@@ -1,0 +1,52 @@
+.heroSection {
+  width: 100%;
+  height: 80vh;
+  padding: 30px 12%;
+  margin: 20px 0px;
+  display: flex;
+}
+
+.heroSectionLeft {
+  padding-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
+.heroSectionRight {
+  width: 45%;
+  display: flex;
+  background-color: #fd6f00;
+}
+
+.firstLine {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fd6f00;
+}
+
+.professionFirst {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120px;
+  margin: -6px;
+}
+
+.professionSecond {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120px;
+  display: flex;
+  justify-content: end;
+}
+
+.heroDescription {
+  font-size: 22px;
+  margin: 40px 0px;
+}

@@ -1,8 +1,9 @@
 .button {
-  padding: 15px 20px;
-  font-size: 28px;
+  height: 55px;
+  width: 200px;
+  font-size: 22px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
   background-color: #fd6f00;
   transition: 0.3s;

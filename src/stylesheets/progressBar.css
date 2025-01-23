@@ -1,0 +1,32 @@
+.label {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.progressBar {
+  position: relative;
+  height: 13px;
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 10px;
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background: #fd6f00;
+  border-radius: 10px 0 0 10px;
+}
+
+.progressCircle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-5%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid #fd6f00;
+  border-radius: 50%;
+}
