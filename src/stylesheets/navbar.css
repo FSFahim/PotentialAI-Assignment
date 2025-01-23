@@ -1,0 +1,79 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 12%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkHeader {
+  background: #1e1e1e;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.navbar a,
+.navItem {
+  position: relative;
+  font-size: 28px;
+  color: black;
+  margin-left: 45px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.darkNavbar a,
+.darkNavItem {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #fd6f00;
+}
+
+.logo img {
+  margin-right: 10px;
+  scale: 1.2;
+}
+
+.firstLetter {
+  font-weight: 700;
+  color: black;
+}
+
+.darkFirstLetter {
+  color: #fff;
+}
+
+.logoText {
+  font-weight: 400;
+  color: #545454;
+}
+
+.darkLogoText {
+  color: #fff;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fd6f00;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
