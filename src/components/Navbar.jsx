@@ -16,12 +16,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </span>
       </a>
       <nav className={`navbar ${darkMode ? "darkNavbar" : ""}`}>
-        <a href="/">Home</a>
-        <a href="/">About Me</a>
-        <a href="/">Services</a>
-        <a href="/">Projects</a>
-        <a href="/">Testimonials</a>
-        <a href="/">Contact</a>
+        <a href="#hero">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
         <Button buttonText="Download CV" className="navItem" />
         <i
           className={`navItem fa-regular ${
