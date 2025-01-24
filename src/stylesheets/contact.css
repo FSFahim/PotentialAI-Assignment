@@ -4,7 +4,31 @@
   padding: 30px 12%;
   margin: 20px 0px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: aquamarine;
+}
+
+.email-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between input and button */
+  margin: 100px;
+}
+
+.email-input {
+  flex: 1; /* Make the input field take most of the space */
+  width: 500px;
+  padding: 12px;
+  font-size: 22px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f8f8f8;
+  color: #666;
+  transition: border-color 0.3s ease;
+}
+
+.email-input:focus {
+  border-color: orange;
 }

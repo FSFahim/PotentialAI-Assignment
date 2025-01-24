@@ -3,10 +3,10 @@ import "../stylesheets/serviceCard.css";
 
 const ServiceCard = ({ icon, title, description }) => {
   return (
-    <div className="card">
+    <div className="serviceCard">
       <img src={icon} alt="Icon" className="serviceCardLogo" />
-      <h3 className="cardTitle">{title}</h3>
-      <p className="cardDescription">{description}</p>
+      <h3 className="serviceCardTitle">{title}</h3>
+      <p className="serviceCardDescription">{description}</p>
     </div>
   );
 };

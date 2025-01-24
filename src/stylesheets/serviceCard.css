@@ -1,11 +1,4 @@
-.cardsContainer {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.card {
+.serviceCard {
   width: calc(25% - 20px);
   background-color: #f8f8f8;
   border-radius: 10px;
@@ -13,7 +6,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
+.serviceCard:hover {
   transform: translateY(-5px);
 }
 
@@ -21,27 +14,27 @@
   margin-bottom: 15px;
 }
 
-.cardTitle {
+.serviceCardTitle {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #000;
 }
 
-.cardDescription {
+.serviceCardDescription {
   font-size: 1.2rem;
   color: #555;
   line-height: 1.5;
 }
 
 @media (max-width: 768px) {
-  .card {
+  .serviceCard {
     width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
-  .card {
+  .serviceCard {
     width: 100%;
   }
 }

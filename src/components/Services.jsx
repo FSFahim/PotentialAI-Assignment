@@ -42,7 +42,7 @@ const Services = () => {
     <div className="services">
       <TitleWithDesc title="Services" desc={description} />
       <section className="servicesSection">
-        <div className="cardsContainer">
+        <div className="serviceCardsContainer">
           {servicesData.map((service, index) => (
             <ServiceCard
               key={index}

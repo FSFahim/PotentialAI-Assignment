@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="heroSection">
       <div className="heroSectionLeft">
         <div className="firstLine">Hi I am</div>
-        <div className="name">Muhammad Umair</div>
+        <div className="myName">Muhammad Umair</div>
         <div className="professionFirst">UI & UX</div>
         <div className="professionSecond">Designer</div>
         <div className="heroDescription">
