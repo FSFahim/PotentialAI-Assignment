@@ -2,9 +2,9 @@ import React from "react";
 import hero from "../assets/hero.jpg";
 import "../stylesheets/popOutImage.css";
 
-const PopOutImage = () => {
+const PopOutImage = ({ darkMode }) => {
   return (
-    <div className="box">
+    <div className={`box ${darkMode ? "darkBox" : ""}`}>
       <div className="circle">
         <img src={hero} alt="" />
       </div>

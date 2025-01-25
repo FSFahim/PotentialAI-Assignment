@@ -20,24 +20,24 @@ const App = () => {
     <div className={darkMode ? "darkMode" : ""}>
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <div id="hero">
-        <HeroSection />
+        <HeroSection darkMode={darkMode} />
       </div>
       <div id="about-me">
-        <AboutMe />
+        <AboutMe darkMode={darkMode} />
       </div>
       <div id="services">
-        <Services />
+        <Services darkMode={darkMode} />
       </div>
       <div id="projects">
-        <Projects />
+        <Projects darkMode={darkMode} />
       </div>
       <div id="testimonials">
-        <Testimonials />
+        <Testimonials darkMode={darkMode} />
       </div>
       <div id="contact">
-        <Contact />
+        <Contact darkMode={darkMode} />
       </div>
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   );
 };

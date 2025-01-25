@@ -4,7 +4,6 @@
   left: 0;
   width: 100%;
   padding: 30px 12%;
-  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,13 +11,6 @@
 
 .darkHeader {
   background: #1e1e1e;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 50px;
-  font-weight: 700;
 }
 
 .navbar a,
@@ -38,28 +30,6 @@
 
 .navbar a:hover {
   color: #fd6f00;
-}
-
-.logo img {
-  margin-right: 10px;
-}
-
-.firstLetter {
-  font-weight: 700;
-  color: black;
-}
-
-.darkFirstLetter {
-  color: #fff;
-}
-
-.logoText {
-  font-weight: 400;
-  color: #545454;
-}
-
-.darkLogoText {
-  color: #fff;
 }
 
 .navbar a::before {

@@ -1,16 +1,14 @@
 import React from "react";
 import "../stylesheets/footer.css";
-import Logo from "../assets/logo.png";
+import Logo from "./Logo";
 import SocialMediaButtons from "./SocialMediaButtons";
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
   return (
     <div className="footer">
-      <div className="footerTop">
+      <div className={`footerTop ${darkMode ? "darkFooterTop" : ""}`}>
         <div className="footerLogo">
-          <img src={Logo} alt="" />
-          <span style={{ color: "#000", fontWeight: 700 }}>M</span>
-          umair
+          <Logo darkMode={darkMode} />
         </div>
         <div className="footerNav">
           <a href="#hero">Home</a>
@@ -20,9 +18,9 @@ const Footer = () => {
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
         </div>
-        <SocialMediaButtons />
+        <SocialMediaButtons darkMode={darkMode} />
       </div>
-      <div className="footerBottom">
+      <div className={`footerBottom ${darkMode ? "darkFooterBottom" : ""}`}>
         <p>
           &copy; 2023{" "}
           <span style={{ color: "#fd6f00", fontWeight: 600 }}>Mumair</span> All

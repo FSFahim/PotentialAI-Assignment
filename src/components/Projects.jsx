@@ -48,7 +48,7 @@ const categories = [
   "App Design",
   "Graphic Design",
 ];
-const Projects = () => {
+const Projects = ({ darkMode }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects =
@@ -56,18 +56,19 @@ const Projects = () => {
       ? projects
       : projects.filter((project) => project.category === selectedCategory);
 
-  const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque autem eligendi rem magnam eius quisquam soluta corporis eaque ea"
+  const description =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque autem eligendi rem magnam eius quisquam soluta corporis eaque ea";
 
   return (
-    <div className="project-gallery">
+    <div className={`projects ${darkMode ? "darkProjects" : ""}`}>
       <TitleWithDesc title="Projects" desc={description} />
-      <div className="category-filter">
+      <div className="categoryFilter">
         {categories.map((category) => (
           <button
             key={category}
-            className={`filter-button ${
+            className={`filterButton ${
               selectedCategory === category ? "active" : ""
-            }`}
+            } ${darkMode ? "darkFilterButton" : ""}`}
             onClick={() => setSelectedCategory(category)}
           >
             {category}
@@ -75,9 +76,9 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="projects-container">
+      <div className="projectsContainer">
         {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.id} project={project} darkMode={darkMode} />
         ))}
       </div>
     </div>

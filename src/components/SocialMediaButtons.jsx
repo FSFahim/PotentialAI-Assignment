@@ -1,9 +1,13 @@
 import React from "react";
 import "../stylesheets/socialMediaButtons.css";
 
-const SocialMediaButtons = () => {
+const SocialMediaButtons = ({ darkMode }) => {
   return (
-    <div className="socialMediaButtons">
+    <div
+      className={`socialMediaButtons ${
+        darkMode ? "darkSocialMediaButtons" : ""
+      }`}
+    >
       <a href="/">
         <i class="fa-brands fa-facebook"></i>
       </a>

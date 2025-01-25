@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.darkFooterTop {
+  background: #1e1e1e;
+  color: white;
+}
+
 .footerBottom {
   width: 100%;
   text-align: center;
@@ -19,6 +24,10 @@
   padding: 30px;
   font-size: 22px;
   color: white;
+}
+
+.darkFooterBottom {
+  background: #121212;
 }
 
 .footerLogo {
@@ -42,6 +51,10 @@
   color: black;
   margin: 0 20px;
   cursor: pointer;
+}
+
+.darkFooterTop .footerNav a {
+  color: white;
 }
 
 .footerNav a:hover {

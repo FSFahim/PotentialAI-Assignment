@@ -3,7 +3,7 @@ import "../stylesheets/aboutMe.css";
 import ProgressBar from "./ProgressBar";
 import PopOutImage from "./popOutImage";
 
-const AboutMe = () => {
+const AboutMe = ({ darkMode }) => {
   const skills = [
     { label: "UX", progress: 70 },
     { label: "Website Design", progress: 85 },
@@ -11,9 +11,9 @@ const AboutMe = () => {
     { label: "Graphic Design", progress: 75 },
   ];
   return (
-    <div className="aboutMe">
+    <div className={`aboutMe ${darkMode ? "darkAboutMe" : ""}`}>
       <div className="aboutMeLeft">
-        <PopOutImage />
+        <PopOutImage darkMode={darkMode} />
       </div>
       <div className="aboutMeRight">
         <div className="title">About Me</div>

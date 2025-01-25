@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.logo img {
+  margin-right: 10px;
+}
+
+.firstLetter {
+  font-weight: 700;
+  color: black;
+}
+
+.darkFirstLetter {
+  color: #fff;
+}
+
+.logoText {
+  font-weight: 400;
+  color: #545454;
+}
+
+.darkLogoText {
+  color: #fff;
+}

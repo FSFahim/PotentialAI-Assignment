@@ -37,9 +37,9 @@ const servicesData = [
 const description =
   "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore vitae natus cum rem maiores amet repellendus delectus minus cumque mollitia ex.";
 
-const Services = () => {
+const Services = ({ darkMode }) => {
   return (
-    <div className="services">
+    <div className={`services ${darkMode ? "darkServices" : ""}`}>
       <TitleWithDesc title="Services" desc={description} />
       <section className="servicesSection">
         <div className="serviceCardsContainer">
@@ -49,6 +49,7 @@ const Services = () => {
               icon={service.icon}
               title={service.title}
               description={service.description}
+              darkMode={darkMode}
             />
           ))}
         </div>

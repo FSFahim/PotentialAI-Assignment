@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.darkSocialMediaButtons a {
+  color: white;
+}
+
 .socialMediaButtons a i {
   scale: 2.2;
 }

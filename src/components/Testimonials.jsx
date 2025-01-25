@@ -38,7 +38,7 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+const Testimonials = ({ darkMode }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const getClassName = (index) => {
@@ -56,7 +56,7 @@ const Testimonials = () => {
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit eaque laboriosam corporis ducimus quaerat possimus praesentium accusamus aperiam saepe ab!";
 
   return (
-    <div className="testimonials">
+    <div className={`testimonials ${darkMode ? "darkTestimonials" : ""}`}>
       <TitleWithDesc title="Testimonials" desc={description} />
       <div className="testimonialCards">
         {testimonials.map((testimonial, index) => (
@@ -64,6 +64,7 @@ const Testimonials = () => {
             key={index}
             testimonial={testimonial}
             className={getClassName(index)}
+            darkMode={darkMode}
           />
         ))}
       </div>

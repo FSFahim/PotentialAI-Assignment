@@ -4,9 +4,9 @@ import Button from "./Button";
 import PopOutImage from "./popOutImage";
 import SocialMediaButtons from "./SocialMediaButtons";
 
-const HeroSection = () => {
+const HeroSection = ({ darkMode }) => {
   return (
-    <div className="heroSection">
+    <div className={`heroSection ${darkMode ? "darkHeroSection" : ""}`}>
       <div className="heroSectionLeft">
         <div className="firstLine">Hi I am</div>
         <div className="myName">Muhammad Umair</div>
@@ -21,8 +21,8 @@ const HeroSection = () => {
         <Button buttonText="Hire Me" />
       </div>
       <div className="heroSectionRight">
-        <PopOutImage />
-        <SocialMediaButtons />
+        <PopOutImage darkMode={darkMode} />
+        <SocialMediaButtons darkMode={darkMode} />
       </div>
     </div>
   );

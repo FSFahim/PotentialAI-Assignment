@@ -1,4 +1,4 @@
-.project-card {
+.projectCard {
   text-align: left;
   background: white;
   border-radius: 8px;
@@ -6,25 +6,29 @@
   flex: 0 0 calc(33.33% - 20px);
 }
 
-.project-card:hover {
+.darkProjectCard {
+  background: #1e1e1e;
+  color: white;
+}
+
+.projectCard:hover {
   transform: scale(1.05);
 }
 
-.project-image {
+.projectImage {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.project-category {
+.projectCategory {
   font-size: 14px;
   color: #fd6f00;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
-.project-title {
+.projectTitle {
   font-size: 18px;
-  color: #333;
   margin-bottom: 30px;
 }

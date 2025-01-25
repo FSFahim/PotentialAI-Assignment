@@ -1,9 +1,13 @@
 import React from "react";
 import "../stylesheets/testimonialCard.css";
 
-const TestimonalCard = ({ testimonial, className }) => {
+const TestimonalCard = ({ testimonial, className, darkMode }) => {
   return (
-    <div className={`testimonialCard ${className}`}>
+    <div
+      className={`testimonialCard ${className} ${
+        darkMode ? "darkTestimonialCard" : ""
+      }`}
+    >
       <img src={testimonial.image} alt="Image" />
       <div className="commentSection">
         <div className="comment">

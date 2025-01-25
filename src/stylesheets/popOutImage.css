@@ -24,6 +24,10 @@
   box-shadow: 0 100px 0 0px white;
 }
 
+.darkBox::before {
+  box-shadow: 0 100px 0 0px #1e1e1e;
+}
+
 .box::after {
   content: "";
   position: absolute;
@@ -37,6 +41,7 @@
 }
 
 .circle {
+  background: white;
   position: absolute;
   bottom: 0px;
   left: 0;

@@ -1,21 +1,25 @@
 .contact {
   width: 100%;
   padding: 30px 12%;
-  margin: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.email-input-container {
+.darkContact {
+  background: #1e1e1e;
+  color: white;
+}
+
+.emailInputContainer {
   display: flex;
   align-items: center;
   gap: 10px; /* Space between input and button */
   margin: 100px;
 }
 
-.email-input {
+.emailInput {
   flex: 1; /* Make the input field take most of the space */
   width: 500px;
   padding: 12px;
@@ -28,6 +32,10 @@
   transition: border-color 0.3s ease;
 }
 
-.email-input:focus {
+.darkContact .emailInputContainer .emailInput {
+  background: white;
+}
+
+.emailInput:focus {
   border-color: orange;
 }

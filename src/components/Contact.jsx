@@ -3,17 +3,17 @@ import "../stylesheets/contact.css";
 import TitleWithDesc from "./TitleWithDesc";
 import Button from "./Button";
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   const description =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, molestias quam! Molestiae dolore laudantium itaque numquam nostrum, sunt fuga aliquam.";
   return (
-    <div className="contact">
+    <div className={`contact ${darkMode ? "darkContact" : ""}`}>
       <TitleWithDesc title="Lets Design Together" desc={description} />
-      <div className="email-input-container">
+      <div className="emailInputContainer">
         <input
           type="email"
           placeholder="Enter Your Email"
-          className="email-input"
+          className="emailInput"
         />
         <Button buttonText="Contact Me" />
       </div>

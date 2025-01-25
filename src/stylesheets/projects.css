@@ -1,35 +1,44 @@
-.project-gallery {
+.projects {
   padding: 20px;
   text-align: center;
 }
 
-.category-filter {
+.darkProjects {
+  background: #1e1e1e;
+  color: white;
+}
+
+.categoryFilter {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.filter-button {
+.filterButton {
   margin: 40px 0px;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #f8f8f8;
   cursor: pointer;
   font-size: 22px;
   border: 1px solid #ddd;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.filter-button.active,
-.filter-button:hover {
+.darkFilterButton {
+  background: white;
+  border: none;
+}
+
+.filterButton.active,
+.filterButton:hover {
   background-color: #fd6f00;
   color: white;
 }
 
-.projects-container {
+.projectsContainer {
   display: flex;
   align-items: center;
   justify-content: center;
