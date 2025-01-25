@@ -47,22 +47,3 @@
 .footerNav a:hover {
   color: #fd6f00;
 }
-
-.footerSocialButtons {
-  margin-bottom: 50px;
-}
-
-.footerSocialButtons a {
-  position: relative;
-  color: black;
-  margin: 0 25px;
-  cursor: pointer;
-}
-
-.footerSocialButtons a i {
-  scale: 2.2;
-}
-
-.footerSocialButtons a:hover {
-  color: #fd6f00;
-}

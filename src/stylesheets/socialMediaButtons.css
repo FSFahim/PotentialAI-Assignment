@@ -1,0 +1,18 @@
+.socialMediaButtons {
+  margin-bottom: 50px;
+}
+
+.socialMediaButtons a {
+  position: relative;
+  color: black;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.socialMediaButtons a i {
+  scale: 2.2;
+}
+
+.socialMediaButtons a:hover {
+  color: #fd6f00;
+}

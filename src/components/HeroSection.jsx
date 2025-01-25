@@ -1,6 +1,8 @@
 import React from "react";
 import "../stylesheets/heroSection.css";
 import Button from "./Button";
+import PopOutImage from "./popOutImage";
+import SocialMediaButtons from "./SocialMediaButtons";
 
 const HeroSection = () => {
   return (
@@ -18,7 +20,10 @@ const HeroSection = () => {
         </div>
         <Button buttonText="Hire Me" />
       </div>
-      <div className="heroSectionRight"></div>
+      <div className="heroSectionRight">
+        <PopOutImage />
+        <SocialMediaButtons />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/aboutMe.css";
 import ProgressBar from "./ProgressBar";
+import PopOutImage from "./popOutImage";
 
 const AboutMe = () => {
   const skills = [
@@ -11,7 +12,9 @@ const AboutMe = () => {
   ];
   return (
     <div className="aboutMe">
-      <div className="aboutMeLeft"></div>
+      <div className="aboutMeLeft">
+        <PopOutImage />
+      </div>
       <div className="aboutMeRight">
         <div className="title">About Me</div>
         <div className="description">

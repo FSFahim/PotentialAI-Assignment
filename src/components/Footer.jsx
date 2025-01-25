@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/footer.css";
 import Logo from "../assets/logo.png";
+import SocialMediaButtons from "./SocialMediaButtons";
 
 const Footer = () => {
   return (
@@ -19,20 +20,7 @@ const Footer = () => {
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact</a>
         </div>
-        <div className="footerSocialButtons">
-          <a href="/">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
+        <SocialMediaButtons />
       </div>
       <div className="footerBottom">
         <p>
