@@ -1,20 +1,35 @@
 .testimonialCard {
-  flex: 0 0 20%;
   display: flex;
-  margin: 0 10px;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 0.5;
   background-color: #f8f8f8;
   border-radius: 10px;
+  margin: 80px;
   padding: 40px;
+  width: 60%;
 }
 
-.testimonialCard.active {
-  flex: 0 0 60%;
+.testimonialCards .active {
+  position: relative;
+  left: 20%;
+}
+
+.prev {
+  position: absolute;
+  left: calc(-40% - 20px);
+  opacity: 0.5;
+}
+
+.next {
+  position: absolute;
+  left: calc(80% + 20px);
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
 }
 
 .quoteIcon {
-  color: orange;
+  color: #fd6f00;
   font-size: 1.5rem;
 }
 

@@ -1,14 +1,9 @@
 import React from "react";
 import "../stylesheets/testimonialCard.css";
 
-const TestimonalCard = ({ testimonial, isActive, isPrev, isNext }) => {
-  const cardClass = isActive
-    ? "testimonialCard active"
-    : isPrev || isNext
-    ? "testimonialCard prev-next"
-    : "testimonialCard hidden";
+const TestimonalCard = ({ testimonial, className }) => {
   return (
-    <div className={cardClass}>
+    <div className={`testimonialCard ${className}`}>
       <img src={testimonial.image} alt="Image" />
       <div className="commentSection">
         <div className="comment">
