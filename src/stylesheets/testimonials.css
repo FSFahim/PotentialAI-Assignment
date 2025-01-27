@@ -44,3 +44,19 @@
 .indicator.active {
   background: #fd6f00;
 }
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .indicator {
+    width: 40px;
+    height: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .indicator {
+    width: 40px;
+    height: 8px;
+  }
+}

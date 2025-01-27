@@ -1,11 +1,12 @@
 .logo {
   display: flex;
   align-items: center;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
 }
 .logo img {
-  margin-right: 10px;
+  scale: 0.9;
+  margin-right: 5px;
 }
 
 .firstLetter {
@@ -24,4 +25,71 @@
 
 .darkLogoText {
   color: #fff;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .logo img {
+    scale: 0.6;
+    margin-right: 0px;
+  }
+
+  .firstLetter {
+    position: relative;
+    left: -10px;
+  }
+
+  .logoText {
+    position: relative;
+    left: -10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .logo {
+    font-size: 30px;
+  }
+
+  .logo img {
+    scale: 0.6;
+    margin-right: 0px;
+  }
+
+  .firstLetter {
+    position: relative;
+    left: -10px;
+  }
+
+  .logoText {
+    position: relative;
+    left: -10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .logo {
+    font-size: 38px;
+  }
+
+  .logo img {
+    scale: 0.7;
+    margin-right: 0px;
+  }
+
+  .firstLetter {
+    position: relative;
+    left: -8px;
+  }
+
+  .logoText {
+    position: relative;
+    left: -8px;
+  }
 }

@@ -1,6 +1,5 @@
 .button {
-  height: 55px;
-  width: 200px;
+  padding: 12px 25px;
   font-size: 22px;
   border: none;
   border-radius: 5px;
@@ -14,4 +13,28 @@
   color: #fd6f00;
   background: #fff;
   border: 1px solid #fd6f00;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .button {
+    font-size: 19px;
+    padding: 10px 25px;
+  }
 }

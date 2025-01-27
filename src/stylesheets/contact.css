@@ -39,3 +39,65 @@
 .emailInput:focus {
   border-color: orange;
 }
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .contact {
+    padding: 30px 6%;
+  }
+  .emailInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin: 50px;
+    width: 100%;
+  }
+  .emailInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .contact {
+    padding: 30px 12%;
+  }
+  .emailInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin: 50px;
+    width: 100%;
+  }
+  .emailInput {
+    width: 90%;
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .contact {
+    padding: 30px 12%;
+  }
+  .emailInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    margin: 50px;
+    width: 100%;
+  }
+  .emailInput {
+    width: 500px;
+    font-size: 19px;
+    padding: 10px;
+  }
+}

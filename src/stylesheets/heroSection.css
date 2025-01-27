@@ -1,4 +1,6 @@
 .heroSection {
+  position: relative;
+  top: 112px;
   width: 100%;
   padding: 30px 12%;
   display: flex;
@@ -10,7 +12,6 @@
 }
 
 .heroSectionLeft {
-  padding-right: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heroSectionLeft .button {
+  width: 30%;
 }
 
 .firstLine {
@@ -48,10 +53,148 @@
   font-weight: 700;
   line-height: 120px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .heroDescription {
   font-size: 22px;
   margin: 40px 0px;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .heroSection {
+    position: relative;
+    top: 82px;
+    width: 100%;
+    padding: 30px 6%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .heroSectionLeft {
+    align-items: center;
+    width: 100%;
+  }
+
+  .heroSectionRight {
+    width: 100%;
+  }
+
+  .firstLine {
+    font-size: 19px;
+  }
+
+  .myName {
+    font-size: 22px;
+  }
+
+  .professionFirst {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .professionSecond {
+    font-size: 50px;
+    line-height: 60px;
+    display: flex;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .heroSection {
+    position: relative;
+    top: 92px;
+    width: 100%;
+    padding: 30px 12%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .heroSectionLeft {
+    align-items: center;
+    width: 100%;
+  }
+
+  .heroSectionRight {
+    width: 100%;
+  }
+
+  .firstLine {
+    font-size: 22px;
+  }
+
+  .myName {
+    font-size: 25px;
+  }
+
+  .professionFirst {
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .professionSecond {
+    font-size: 60px;
+    line-height: 72px;
+    display: flex;
+  }
+
+  .heroDescription {
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .heroSection {
+    position: relative;
+    top: 102px;
+    width: 100%;
+    padding: 30px 12%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .heroSectionLeft {
+    align-items: center;
+    width: 100%;
+  }
+
+  .heroSectionRight {
+    width: 100%;
+  }
+
+  .firstLine {
+    font-size: 22px;
+  }
+
+  .myName {
+    font-size: 25px;
+  }
+
+  .professionFirst {
+    font-size: 80px;
+    line-height: 95px;
+  }
+
+  .professionSecond {
+    font-size: 80px;
+    line-height: 95px;
+    display: flex;
+  }
+
+  .heroDescription {
+    font-size: 19px;
+    text-align: center;
+    width: 80%;
+  }
 }

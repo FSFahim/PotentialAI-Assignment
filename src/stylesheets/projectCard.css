@@ -17,18 +17,66 @@
 
 .projectImage {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
 .projectCategory {
-  font-size: 14px;
+  font-size: 19px;
   color: #fd6f00;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
 .projectTitle {
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 30px;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .projectCard {
+    flex: 0 0 100%;
+  }
+
+  .projectCategory {
+    font-size: 16px;
+  }
+
+  .projectTitle {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .projectCard {
+    flex: 0 0 100%;
+  }
+
+  .projectCategory {
+    font-size: 16px;
+  }
+
+  .projectTitle {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .projectCard {
+    flex: 0 0 calc(50% - 10px);
+  }
+
+  .projectCategory {
+    font-size: 19px;
+  }
+
+  .projectTitle {
+    font-size: 22px;
+  }
 }

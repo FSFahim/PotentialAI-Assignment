@@ -1,24 +1,39 @@
 .header {
-  position: relative;
+  position: fixed;
+  background: white;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 12%;
+  padding: 20px 12%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
 }
 
 .darkHeader {
   background: #1e1e1e;
 }
 
+.scrolled {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .navbar a,
 .navItem {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   color: black;
-  margin-left: 30px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -45,4 +60,110 @@
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.darkMenuIcon {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: none;
+  }
+
+  .darkNavbar {
+    background-color: #1e1e1e;
+  }
+
+  .navbar.open {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .darkNavbar.open {
+    background-color: #1e1e1e;
+    opacity: 0.9;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .header {
+    padding: 5px 6%;
+  }
+
+  .navbar {
+    top: 82px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+
+  .menuIcon {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .header {
+    padding: 10px 6%;
+  }
+
+  .navbar {
+    top: 92px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .menuIcon {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .header {
+    padding: 15px 6%;
+  }
+
+  .navbar {
+    top: 102px;
+  }
+
+  .navbar a {
+    font-size: 19px;
+    margin: 10px 0;
+  }
+
+  .menuIcon {
+    font-size: 30px;
+  }
 }

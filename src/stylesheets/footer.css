@@ -32,17 +32,13 @@
 
 .footerLogo {
   display: flex;
-  margin: 100px 0 80px;
+  margin: 80px 0 50px;
   font-size: 50px;
   color: #545454;
 }
 
-.footerLogo img {
-  margin-right: 10px;
-}
-
 .footerNav {
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .footerNav a {
@@ -59,4 +55,77 @@
 
 .footerNav a:hover {
   color: #fd6f00;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .footerBottom {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 30px;
+  }
+
+  .footerNav a {
+    font-size: 16px;
+  }
+
+  .footerLogo {
+    margin: 30px 0 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .footerBottom {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .footerNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 20px;
+  }
+
+  .footerNav a {
+    font-size: 16px;
+  }
+
+  .footerLogo {
+    margin: 30px 0 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .footerBottom {
+    font-size: 19px;
+    padding: 25px;
+  }
+
+  .footerNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px;
+  }
+
+  .footerNav a {
+    font-size: 19px;
+  }
+
+  .footerLogo {
+    margin: 50px 0 0;
+  }
 }

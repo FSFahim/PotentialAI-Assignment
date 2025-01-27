@@ -1,5 +1,5 @@
 .serviceCard {
-  width: calc(25% - 20px);
+  width: calc(25% - 15px);
   background-color: #f8f8f8;
   border-radius: 10px;
   padding: 45px 20px;
@@ -19,26 +19,85 @@
 }
 
 .serviceCardTitle {
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #000;
 }
 
 .serviceCardDescription {
-  font-size: 1.2rem;
+  font-size: 22px;
   color: #555;
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
   .serviceCard {
-    width: calc(50% - 20px);
+    width: 100%;
+    padding: 45px 20px;
+  }
+
+  .serviceCardTitle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .serviceCardDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .serviceCardLogo {
+    scale: 0.8;
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
   .serviceCard {
     width: 100%;
+    padding: 45px 20px;
+  }
+
+  .serviceCardTitle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .serviceCardDescription {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .serviceCardLogo {
+    scale: 0.8;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .serviceCard {
+    width: calc(50% - 10px);
+    padding: 45px 20px;
+  }
+
+  .serviceCardTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .serviceCardDescription {
+    font-size: 19px;
+    color: #555;
+    line-height: 1.5;
   }
 }

@@ -68,3 +68,10 @@
   transform: translateX(-50%);
   height: 500px;
 }
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .box {
+    scale: 0.8;
+  }
+}

@@ -30,3 +30,63 @@
   border: 3px solid #fd6f00;
   border-radius: 50%;
 }
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .label {
+    font-size: 16px;
+  }
+
+  .progressBarContainer {
+    width: 90%;
+  }
+
+  .progressBar {
+    height: 9px;
+  }
+
+  .progressCircle {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .label {
+    font-size: 16px;
+  }
+
+  .progressBarContainer {
+    width: 80%;
+  }
+
+  .progressBar {
+    height: 9px;
+  }
+
+  .progressCircle {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .label {
+    font-size: 19px;
+  }
+
+  .progressBarContainer {
+    width: 80%;
+  }
+
+  .progressBar {
+    height: 11px;
+  }
+
+  .progressCircle {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,5 +1,5 @@
 .projects {
-  padding: 20px;
+  padding: 30px 12%;
   text-align: center;
 }
 
@@ -10,13 +10,13 @@
 
 .categoryFilter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 40px 0px;
 }
 
 .filterButton {
-  margin: 40px 0px;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -43,6 +43,53 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; /* Makes it scrollable */
-  padding: 0 12%; /* Adds 12% padding on left and right */
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  /* For smartphones in portrait orientation */
+  .projects {
+    padding: 30px 6%;
+    text-align: center;
+  }
+  .projectsContainer {
+    padding: 0;
+  }
+
+  .filterButton {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* For small smartphones in landscape orientation and small tablets in portrait orientation */
+  .projects {
+    padding: 30px 12%;
+    text-align: center;
+  }
+  .projectsContainer {
+    padding: 0;
+  }
+
+  .filterButton {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* For large smartphones and small tablets in landscape orientation and large tablets in portrait orientation */
+  .projects {
+    padding: 30px 6%;
+    text-align: center;
+  }
+  .projectsContainer {
+    padding: 0;
+  }
+
+  .filterButton {
+    font-size: 19px;
+    padding: 10px 15px;
+  }
 }
